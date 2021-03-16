@@ -37,7 +37,9 @@ $(document).ready(function () {
             
             $('#classe').append("<h2>" + (i + 1) + "° studente: " + classe[i].nome + ' ' + classe[i].cognome + "</h2>");
         }
-
+        
+    // l'utente deve poter aggiungere un nuovo oggetto studente
+        // inserire tramite form nome, cognome ed età
     $('#btn').click(function () { 
 
         var nome = $('#nome').val();
@@ -53,17 +55,23 @@ $(document).ready(function () {
         classe.push(studente);
         console.log(classe);
 
+        $('#classe').empty();
+        $('#nome').val('');
+        $('#cognome').val('');
+        $('#eta').val('');
+
         for(i = 0; i < classe.length; i++) {
-            console.log((i + 1) + "° studente: " + classe[i].nome + ' ' + classe[i].cognome);
+            // console.log((i + 1) + "° studente: " + classe[i].nome + ' ' + classe[i].cognome);
             $('#classe').append("<h2>" + (i + 1) + "° studente: " + classe[i].nome + ' ' + classe[i].cognome + "</h2>");
         }
+
+
 
         
     });
 
     
         
-    // l'utente deve poter aggiungere un nuovo oggetto studente
-        // inserire tramite form nome, cognome ed età
+    
 
 });
