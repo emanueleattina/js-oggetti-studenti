@@ -38,7 +38,7 @@ $(document).ready(function () {
             $('#classe').append("<h2>" + (i + 1) + "° studente: " + classe[i].nome + ' ' + classe[i].cognome + "</h2>");
         }
 
-        $('#classe').children().addClass('mt-20')
+        $('#classe').children().addClass('mt-20');
 
         
     // l'utente deve poter aggiungere un nuovo oggetto studente
@@ -66,7 +66,7 @@ $(document).ready(function () {
         for(i = 0; i < classe.length; i++) {
             // console.log((i + 1) + "° studente: " + classe[i].nome + ' ' + classe[i].cognome);
             $('#classe').append("<h2>" + (i + 1) + "° studente: " + classe[i].nome + ' ' + classe[i].cognome + "</h2>");
-            $('#classe').children().addClass('mt-20')
+            $('#classe').children().addClass('mt-20');
 
         }
 
